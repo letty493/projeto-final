@@ -55,7 +55,7 @@
 		$estado = $_POST["estado"];
 		$cep = $_POST["cep"];
 			
-		$insere = "insert into castracao.dono values('$rua','$numero','$bairro','$cidade','$estado','$cep')";
+		$insere = "insert into castracao.endereco values('$rua','$numero','$bairro','$cidade','$estado','$cep')";
 		mysql_query ($insere, $conexao) or die (mysql_error());
 		echo "<script>alert('Cadastro realizado com sucesso.');</script>";
 		mysql_close($conexao);
