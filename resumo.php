@@ -4,9 +4,8 @@
 		<h1> Resumo das inscrições: </h1>
 		<br>
 	</center>
-
+</html>
 <?php
-	
 	$consulta = mysql_query("select * from castracao.dono",$conexao);
 	while($_GET = mysql_fetch_array($consulta)){
 	echo "<br>ID: ".$_GET['id'];
@@ -42,5 +41,3 @@
 	}
 	mysql_close($conexao);
 ?>
-
-</html>
