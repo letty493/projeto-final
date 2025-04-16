@@ -47,7 +47,7 @@
 		$vacidado = $_POST["vacinado"];
 		$data = $_POST["data"];
 			
-		$insere = "insert into castracao.dono values('$nome','$especie','$idade','$sexo','$raca','$peso','$vacinado','$data')";
+		$insere = "insert into castracao.pet values('$nome','$especie','$idade','$sexo','$raca','$peso','$vacinado','$data')";
 		mysql_query ($insere, $conexao) or die (mysql_error());
 		echo "<script>alert('Cadastro realizado com sucesso.');</script>";
 		mysql_close($conexao);
